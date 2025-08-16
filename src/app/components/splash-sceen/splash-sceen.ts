@@ -9,16 +9,4 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class SplashSceen {
 
-    @Input()
-    public show: boolean = true;
-
-    @Output() emetteurNom =  new EventEmitter<string>()
-
-  @Output() eventClose: () => void = () => {
-    this.show = false;  
-  }
-
-  emettre(){
-    this.emetteurNom.emit('Pasteque')
-  }
 }
