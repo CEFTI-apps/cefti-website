@@ -1,10 +1,4 @@
 
-<app-splash-sceen [show]="false" (emetteurNom)="recevoir($event)"></app-splash-sceen>
-
-<p>Merci pour ce tableau</p>
-
----@for(nom of noms; track $index){
-    <p>{{nom}} - {{$index}}</p>
-}
 <router-outlet></router-outlet>
 
+<p>{{compteur()}}</p>
