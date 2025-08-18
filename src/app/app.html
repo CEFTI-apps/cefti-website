@@ -1,4 +1,11 @@
-
-<router-outlet></router-outlet>
-
-<p>{{compteur()}}</p>
+@if (currentLayout$ | async; as layout ) {
+    @if(layout === 'public'){
+        <app-public-layout>
+            <router-outlet (activate)="resetPosition()"></router-outlet>
+        </app-public-layout>
+    }@else if (layout === 'empty') {
+        <app-empty-layout>
+        <router-outlet (activate)="resetPosition()"></router-outlet>
+        </app-empty-layout>
+    }
+}
