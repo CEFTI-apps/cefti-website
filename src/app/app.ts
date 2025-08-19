@@ -1,10 +1,11 @@
-import { Component, Inject, inject, OnDestroy, OnInit, signal } from '@angular/core';
+import { afterEveryRender, Component, Inject, inject, OnDestroy, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { distinctUntilChanged, filter, map, Observable, startWith, Subject, takeUntil } from 'rxjs';
 import { PublicLayout } from "./layouts/public-layout/public-layout";
 import { EmptyLayout } from "./layouts/empty-layout/empty-layout";
 import { CommonModule } from '@angular/common';
 import { isBrowser } from './core/utils/is-broswer';
+import { PlatformService } from './core/services/is-browser.service';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,13 @@ export class App implements OnInit, OnDestroy {
    protected readonly router = inject(Router)
    protected readonly activatedRoute =  inject(ActivatedRoute)
   private readonly destroy$ = new Subject<void>();
+  private readonly platformService = inject(PlatformService);
 
+  constructor(){
+    afterEveryRender(() => {
+      console.log('@afterEveryRender',this.title() );
+    });
+  }
    /** Layout courant selon la route active */
    protected readonly currentLayout$: Observable<    'public' | 'empty'> = this.router.events.pipe(
     filter((event) => event instanceof NavigationEnd),
@@ -39,7 +46,7 @@ export class App implements OnInit, OnDestroy {
 
 
   protected resetPosition() {
-    if (isBrowser()) {
+    if (this.platformService.isBrowser()) {
       window.scrollTo({ top: 0, behavior: 'auto' });
     }
   }
@@ -53,7 +60,7 @@ export class App implements OnInit, OnDestroy {
       .subscribe(() => {
         
         setTimeout(() => {
-          if (isBrowser()) {
+          if (this.platformService.isBrowser()) {
             window.scrollTo({ top: 0, behavior: 'auto' });
           }
         }, 0);
@@ -61,6 +68,7 @@ export class App implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 }

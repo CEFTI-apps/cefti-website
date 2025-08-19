@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { Home } from './features/ui/home/home';
 
 export const routes: Routes = [
     // Public layout routes
@@ -7,10 +6,19 @@ export const routes: Routes = [
         path: '',
         pathMatch: 'full',
         redirectTo: 'home',
+    }                                                           ,
+    {                                                                       
+        path : 'home',
+        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        title : 'Accueil - Cefti',
+        data : { layout : 'public' }
     },
     {
-        path : 'home',
-        component: Home,
-        data : { layout : 'public' }
-    }
+        path: '404',
+        title : 'Page Not Found - Cefti',
+        loadComponent: () => import('./features/components/not-found/not-found').then(m => m.NotFound),
+        data: { layout: 'public' }
+    },
+     // Catch all unknown routes and redirect to 404
+    { path: '**', redirectTo: '404' }
 ];
