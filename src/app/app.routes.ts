@@ -15,37 +15,37 @@ export const routes: Routes = [
     },
     {                                                                       
         path : 'program',
-        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        loadComponent: ()=> import('./features/ui/programmes/programmes').then(m => m.Programmes),
         title : "Programme d'Etudes - Cefti",
         data : { layout : 'public' }
     },
     {                                                                       
         path : 'activity',
-        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        loadComponent: ()=> import('./features/ui/activity-school/activity-school').then(m => m.ActivitySchool),
         title : 'Activités - Cefti',
         data : { layout : 'public' }
     },
     {                                                                       
         path : 'employe',
-        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        loadComponent: ()=> import('./features/ui/employees/employees').then(m => m.Employees),
         title : 'Employés - Cefti',
         data : { layout : 'public' }
     },
     {                                                                       
         path : 'contact',
-        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        loadComponent: ()=> import('./features/ui/contact/contact').then(m => m.Contact),
         title : 'Contactez Nous - Cefti',
         data : { layout : 'public' }
     },
     {                                                                       
         path : 'visit',
-        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        loadComponent: ()=> import('./features/ui/visit-school/visit-school').then(m => m.VisitSchool),
         title : 'Visitez - Cefti',
         data : { layout : 'public' }
     },
     {                                                                       
         path : 'ask',
-        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        loadComponent: ()=> import('./features/ui/requete/requete').then(m => m.Requete),
         title : 'Requete - Cefti',
         data : { layout : 'public' }
     },
