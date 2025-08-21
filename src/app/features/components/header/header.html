@@ -1,23 +1,36 @@
-<nav>
-   <div>
-    <img src="" alt="" class="image">
-    <a href="" class="nom">Centre d'Enseignement et de Formation en technique Industrielle</a>
-   </div>
-   <div>
-    <a href="" class="dropdown">Découvrez le CEFTI</a>
-    <a href="" class="programme">Programme d'Etudes et Admission</a>
-    <a href="" class="activity">Activités</a>
-    <a href="" class="employee">Personnels</a>
-    <a href="" class="contact">Nous Joindre</a>
-   </div>
-   <div>
-         <a href="" class="visit">Visitez</a>
-         <a href="" class="schoollife">Requete</a>
-   </div>
-</nav>
-
-
-
-    
-    
-   
+<header>
+      <nav>
+            <div class="logo">
+                  <img src="/assets/images/cefti.png" alt=" " routerLinkActive= "" class="image w-[120px] h-auto font-bold logo-pulse">
+                  <a routerLink="/home" routerLinkActive= "active" class="nom">Centre d'Enseignement et de Formation en technique Industrielle</a>
+            <!-- <app-beta-badge/> -->
+            </div>
+            <ul class="link">
+                  <li>
+                        <a routerLink="/home" routerLinkActive= "active" class="dropdown">Découvrez le CEFTI</a>
+                  </li>
+                  <li>
+                        <a routerLink="/program" routerLinkActive= "active" class="programme">Programme d'Etudes et Admission</a>
+                  </li>
+                  <li>
+                        <a routerLink="/activity" routerLinkActive= "active" class="activity">Activités</a>
+                  </li>
+                  <li>
+                        <a routerLink="/employe" routerLinkActive= "active" class="employee">Personnels</a>
+                  </li>
+                  <li>
+                        <a routerLink="/contact" routerLinkActive= "active" class="contact">Nous Joindre</a>
+                  </li>
+            </ul>
+            <div class="right-card">
+                  <ul class="visit">
+                        <li>
+                              <a routerLink="/visit" routerLinkActive= "active" class="visit">Visitez</a>
+                        </li>
+                        <li>
+                              <a routerLink="/ask" routerLinkActive= "active" class="schoollife">Requete</a>
+                        </li>
+                  </ul>
+            </div>
+      </nav>
+</header>

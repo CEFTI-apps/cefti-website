@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { BetaBadgeComponent } from '../../../components/beta-badge/beta-badge';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone:true,
+  imports: [
+    RouterLinkActive,
+    RouterLink,
+  ],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
 export class Header {
-
 }

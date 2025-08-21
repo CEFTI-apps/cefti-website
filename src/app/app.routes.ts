@@ -10,7 +10,43 @@ export const routes: Routes = [
     {                                                                       
         path : 'home',
         loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
-        title : 'Accueil - Cefti',
+        title : 'Cefti - Centre de Formation Technologie et Industrielle',
+        data : { layout : 'public' }
+    },
+    {                                                                       
+        path : 'program',
+        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        title : "Programme d'Etudes - Cefti",
+        data : { layout : 'public' }
+    },
+    {                                                                       
+        path : 'activity',
+        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        title : 'Activités - Cefti',
+        data : { layout : 'public' }
+    },
+    {                                                                       
+        path : 'employe',
+        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        title : 'Employés - Cefti',
+        data : { layout : 'public' }
+    },
+    {                                                                       
+        path : 'contact',
+        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        title : 'Contactez Nous - Cefti',
+        data : { layout : 'public' }
+    },
+    {                                                                       
+        path : 'visit',
+        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        title : 'Visitez - Cefti',
+        data : { layout : 'public' }
+    },
+    {                                                                       
+        path : 'ask',
+        loadComponent: ()=> import('./features/ui/home/home').then(m => m.Home),
+        title : 'Requete - Cefti',
         data : { layout : 'public' }
     },
     {
