@@ -4,7 +4,6 @@ import { distinctUntilChanged, filter, map, Observable, startWith, Subject, take
 import { PublicLayout } from "./layouts/public-layout/public-layout";
 import { EmptyLayout } from "./layouts/empty-layout/empty-layout";
 import { CommonModule } from '@angular/common';
-import { isBrowser } from './core/utils/is-broswer';
 import { PlatformService } from './core/services/is-browser.service';
 
 @Component({

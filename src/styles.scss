@@ -1,14 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
-  font-family: "Jura", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
   font-optical-sizing: auto;
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
   scroll-behavior: smooth;
 }
-
 

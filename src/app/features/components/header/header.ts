@@ -13,4 +13,6 @@ import { BetaBadgeComponent } from '../../../components/beta-badge/beta-badge';
   styleUrl: './header.scss'
 })
 export class Header {
+   open = false;
+   dropdown = false;
 }
