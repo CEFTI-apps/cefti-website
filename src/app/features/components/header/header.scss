@@ -26,6 +26,7 @@ a{
 header{
     position: relative;
     padding: 0 2rem;
+    border-bottom: solid 1px rgb(213, 175, 138);
 }
 
 nav{
@@ -43,9 +44,10 @@ nav{
             margin-right: 1.5rem;
             transition: ease-in-out 0.3s;
         }
-    }
+    }  
 }
-a.active{
-    font-weight: bold;
-    transition: ease-in-out 0.3s;
+nav ul li a.active {
+  font-weight: bold;
+  color: rgb(20, 121, 174); // tu changes par la couleur que tu veux
+  transition: ease-in-out 0.3s;
 }
