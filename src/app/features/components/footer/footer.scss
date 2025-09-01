@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    //background: #0f2364;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+
+    a{
+        color: #0f2364;
+        text-decoration: none;
+    }
+}
