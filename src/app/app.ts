@@ -5,11 +5,12 @@ import { PublicLayout } from "./layouts/public-layout/public-layout";
 import { EmptyLayout } from "./layouts/empty-layout/empty-layout";
 import { CommonModule } from '@angular/common';
 import { PlatformService } from './core/services/is-browser.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet, PublicLayout, EmptyLayout,PublicLayout,CommonModule],
+  imports: [RouterOutlet, PublicLayout, EmptyLayout,PublicLayout,CommonModule, FontAwesomeModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
