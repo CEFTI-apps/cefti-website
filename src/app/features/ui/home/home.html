@@ -1,25 +1,35 @@
-  <!-- <section class="section text-center">
-    <h1 class="h1">CEFTI, une École, un Métier, un Avenir sûr</h1>
-    <p class="p mt-4 max-w-3xl mx-auto">Centre d'enseignement et de formation technique industrielle et commerciale — Douala.</p>
-    <div class="mt-8 flex gap-4 justify-center">
-      <a class="btn" routerLink="/admissions">Demander la brochure</a>
-      <a class="btn btn-outline" routerLink="/programmes">Voir les programmes</a>
+<div class="hero-container">
+  <div class="hero-content">
+    <h1>Shape Your Future at <span>Academy</span></h1>
+    <p>
+      Discover a world of opportunities with our diverse programs and vibrant campus
+      community. Apply today and start your journey towards success.
+    </p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary">View Programs</button>
+      <button class="btn btn-secondary">Request Information</button>
     </div>
-  </section>
-  <section class="section grid grid-cols-2 md:grid-cols-4 gap-6" revealOnScroll>
-    <div class="card text-center"><div class="text-4xl font-extrabold"><span [countUp]="1200"></span>+</div><div>Inscriptions actuelles</div></div>
-    <div class="card text-center"><div class="text-4xl font-extrabold"><span [countUp]="80"></span>+</div><div>Personnel qualifié</div></div>
-    <div class="card text-center"><div class="text-4xl font-extrabold"><span [countUp]="15"></span>+</div><div>Clubs et activités</div></div>
-    <div class="card text-center"><div class="text-4xl font-extrabold"><span [countUp]="5000"></span>+</div><div>Diplômés</div></div>
-  </section>
-  <section class="section" revealOnScroll>
-    <h2 class="h2 mb-6">Programmes phares</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <a class="card" tilt routerLink="/programmes/electricite">Electricité résidentielle & industrielle</a>
-      <a class="card" tilt routerLink="/programmes/electronique">Electronique & solaire</a>
-      <a class="card" tilt routerLink="/programmes/froid-climatisation">Froid & climatisation</a>
-      <a class="card" tilt routerLink="/programmes/maconnerie">Maçonnerie / Génie civil</a>
-      <a class="card" tilt routerLink="/programmes/mecanique-auto">Mécanique automobile</a>
-      <a class="card" tilt routerLink="/programmes/menuiserie">Menuiserie / Ébénisterie</a>
-    </div>
-  </section> -->
+  </div>
+</div>
+<app-section
+  title="Experience Campus Life"
+  subtitle="Immerse yourself in a vibrant campus community with numerous clubs, organizations, and events. Our state-of-the-art facilities and dedicated support services ensure a fulfilling student experience."
+>
+  <app-feature-card
+    [icon]="faUsers"
+    title="Student Organizations"
+    description="Join a diverse range of clubs and organizations to connect with peers, pursue your passions, and develop leadership skills."
+  ></app-feature-card>
+
+  <app-feature-card
+    [icon]="faBuilding"
+    title="Modern Facilities"
+    description="Access cutting-edge facilities, including libraries, labs, and recreational centers, designed to enhance your learning and personal growth."
+  ></app-feature-card>
+
+  <app-feature-card
+    [icon]="faHandsHelping"
+    title="Support Services"
+    description="Benefit from comprehensive support services, including academic advising, career counseling, and wellness programs."
+  ></app-feature-card>
+</app-section>
