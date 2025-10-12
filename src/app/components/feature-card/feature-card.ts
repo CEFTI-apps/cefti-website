@@ -3,6 +3,7 @@ import { FaIconComponent, IconDefinition } from "@fortawesome/angular-fontawesom
 
 @Component({
   selector: 'app-feature-card',
+  standalone: true,
   imports: [FaIconComponent],
   templateUrl: './feature-card.html',
   styleUrl: './feature-card.scss'

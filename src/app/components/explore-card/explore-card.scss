@@ -1,0 +1,44 @@
+.explore-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.3s ease;
+  text-align: left; // ✅ pour garder cohérence
+
+  .card-image{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  i {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: solid 1px rgb(213, 175, 138);
+  }
+}

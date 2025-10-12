@@ -12,25 +12,57 @@
     </div>
   </div>
 </div>
-<app-section
-  title="Experience Campus Life"
-  subtitle="Immerse yourself in a vibrant campus community with numerous clubs, organizations, and events. Our state-of-the-art facilities and dedicated support services ensure a fulfilling student experience."
->
-  <app-feature-card
-    [icon]="faUsers"
-    title="Student Organizations"
-    description="Join a diverse range of clubs and organizations to connect with peers, pursue your passions, and develop leadership skills."
-  ></app-feature-card>
+<div>
+  <app-section class="explore-section"
+    title="Explore Our Academic Excellence"
+    subtitle="Academy Central offers a wide range of programs designed to challenge and inspire students. From innovative research opportunities to collaborative learning environments, we provide the tools for your academic journey."
+  >
+    <app-explore-card
+      [imageUrl]="'assets/images/ee.png'"
+      title="Undergraduate Programs"
+      description="Explore our diverse undergraduate programs that provide a strong foundation for your future career."
+    ></app-explore-card>
 
-  <app-feature-card
-    [icon]="faBuilding"
-    title="Modern Facilities"
-    description="Access cutting-edge facilities, including libraries, labs, and recreational centers, designed to enhance your learning and personal growth."
-  ></app-feature-card>
+    <app-explore-card
+     [imageUrl]="'assets/images/eee.png'"
+      title="Graduate Studies"
+      description="Advance your knowledge and skills with our specialized graduate programs and research opportunities."
+    ></app-explore-card>
 
-  <app-feature-card
-    [icon]="faHandsHelping"
-    title="Support Services"
-    description="Benefit from comprehensive support services, including academic advising, career counseling, and wellness programs."
-  ></app-feature-card>
-</app-section>
+    <app-explore-card
+     [imageUrl]="'assets/images/eee.png'"
+      title="Online Learning"
+      description="Flexible online courses designed to fit your schedule, allowing you to learn from anywhere."
+    ></app-explore-card>
+
+    <app-explore-card
+     [imageUrl]="'assets/images/ee.png'"
+      title="Online Learning"
+      description="Flexible online courses designed to fit your schedule, allowing you to learn from anywhere."
+    ></app-explore-card>
+   
+  </app-section>
+  <app-section
+    title="Experience Campus Life"
+    subtitle="Immerse yourself in a vibrant campus community with numerous clubs, organizations, and events. Our state-of-the-art facilities and dedicated support services ensure a fulfilling student experience."
+  >
+    <app-feature-card
+      [icon]="faUsers"
+      title="Student Organizations"
+      description="Join a diverse range of clubs and organizations to connect with peers, pursue your passions, and develop leadership skills."
+    ></app-feature-card>
+
+    <app-feature-card
+      [icon]="faBuilding"
+      title="Modern Facilities"
+      description="Access cutting-edge facilities, including libraries, labs, and recreational centers, designed to enhance your learning and personal growth."
+    ></app-feature-card>
+
+    <app-feature-card
+      [icon]="faHandsHelping"
+      title="Support Services"
+      description="Benefit from comprehensive support services, including academic advising, career counseling, and wellness programs."
+    ></app-feature-card>
+    
+  </app-section>
+</div>
