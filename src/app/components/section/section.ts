@@ -10,4 +10,6 @@ import { Component, Input } from '@angular/core';
 export class Section {
     @Input() title: string = '';
     @Input() subtitle: string = '';
+    @Input() centered: boolean = false; 
+    @Input() alignment: 'left' | 'center' | 'right' = 'left';
 }
