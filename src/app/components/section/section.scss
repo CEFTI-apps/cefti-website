@@ -27,7 +27,7 @@
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
-    justify-content: flex-start; // ✅ les cartes commencent à gauche
+    justify-content: flex-start;
   }
 
   &.centered {
