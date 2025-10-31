@@ -1,35 +1,89 @@
 <header>
-      <nav>
-            <div class="logo">
-                  <img src="/assets/images/cefti.png" alt=" " routerLinkActive= "">
-                  <!-- <a routerLink="/home" routerLinkActive= "active" class="nom">Centre d'Enseignement et de Formation en technique Industrielle</a>            -->
-            </div>
-            <ul class="link">
-                  <li>
-                        <a routerLink="/home" routerLinkActive= "active" class="dropdown">Découvrez le CEFTI</a>
-                  </li>
-                  <li>
-                        <a routerLink="/program" routerLinkActive= "active" class="programme">Programme d'Etudes et Admission</a>
-                  </li>
-                  <li>  
-                        <a routerLink="/activity" routerLinkActive= "active" class="activity">Activités</a>
-                  </li>
-                  <li>
-                        <a routerLink="/employe" routerLinkActive= "active" class="employee">Personnels</a>
-                  </li>
-                  <li>
-                        <a routerLink="/contact" routerLinkActive= "active" class="contact">Nous Joindre</a>
-                  </li>
-            </ul>
-            <div class="right-card">
-                  <ul class="visit">
-                        <li>
-                              <a routerLink="/visit" routerLinkActive= "active" class="visit">Visitez</a>
-                        </li>
-                        <li>
-                              <a routerLink="/ask" routerLinkActive= "active" class="schoollife">Requete</a>
-                        </li>
-                  </ul>
-            </div>
-      </nav>
+  <nav>
+    <div class="logo">
+      <img src="/assets/images/cefti.png" alt="" routerLinkActive="" />
+    </div>
+    <ul class="link">
+      <li class="dropdown-container">
+        <a
+          routerLink="/home"
+          class="dropdown programme dropdown-toggle"
+          routerLinkActive="active"
+          >Découvrez le CEFTI <span class="arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/program/professional" routerLinkActive="active">
+              Fondateur
+            </a>
+          </li>
+          <li>
+            <a routerLink="/program/academic" routerLinkActive="active">
+              Historique
+            </a>
+          </li>
+          <li>
+            <a routerLink="/program/academic" routerLinkActive="active">
+              Atouts
+            </a>
+          </li>
+          <li>
+            <a routerLink="/program/academic" routerLinkActive="active">
+              Batiments
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!--  Nouveau dropdown pour Programmes -->
+      <li class="dropdown-container">
+        <a class="programme dropdown-toggle">
+          Programmes
+          <span class="arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/program/professional" routerLinkActive="active">
+              Professionnel
+            </a>
+          </li>
+          <li>
+            <a routerLink="/program/academic" routerLinkActive="active">
+              Académique
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a routerLink="/activity" routerLinkActive="active" class="activity"
+          >Activités</a
+        >
+      </li>
+      <li>
+        <a routerLink="/employe" routerLinkActive="active" class="employee"
+          >Personnels</a
+        >
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active" class="contact"
+          >Nous Joindre</a
+        >
+      </li>
+    </ul>
+    <div class="right-card">
+      <ul class="visit">
+        <li>
+          <a routerLink="/visit" routerLinkActive="active" class="visit"
+            >Visitez</a
+          >
+        </li>
+        <li>
+          <a routerLink="/ask" routerLinkActive="active" class="schoollife"
+            >Requête</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
