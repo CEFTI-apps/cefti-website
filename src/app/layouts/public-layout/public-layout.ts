@@ -5,10 +5,9 @@ import { Footer } from '../../features/components/footer/footer';
 
 @Component({
   selector: 'app-public-layout',
-  imports: [RouterOutlet,Header, Footer],
+  standalone: true,
+  imports: [RouterOutlet, Header, Footer],
   templateUrl: './public-layout.html',
-  styleUrl: './public-layout.scss'
+  styleUrl: './public-layout.scss',
 })
-export class PublicLayout {
-
-}
+export class PublicLayout {}
