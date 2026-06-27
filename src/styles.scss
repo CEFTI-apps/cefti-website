@@ -1,19 +1,25 @@
+@use './styles/tokens';
+@use './styles/animations';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
-  font-family: "Plus Jakarta Sans", sans-serif;
   scroll-behavior: smooth;
   font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: normal;
-  scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
 
-@theme{
-  --color-primary: rgb(213, 175, 138);
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -.02em;
+}
+
+@theme {
+  --color-primary:   rgb(213, 175, 138);
   --color-secondary: rgb(20, 121, 174);
 }

@@ -1,0 +1,20 @@
+:root {
+  --encre:       #08272C;
+  --petrole:     #0E5A63;
+  --petrole-2:   #0B454C;
+  --or:          #E8A33D;
+  --or-2:        #C9851E;
+  --craie:       #F4F6F5;
+  --blanc:       #FFFFFF;
+  --ardoise:     #54686B;
+  --texte:       #10262B;
+  --ligne:       #DCE6E4;
+  --ligne-dark:  rgba(255, 255, 255, 0.10);
+  --radius:      16px;
+  --radius-sm:   10px;
+  --maxw:        1180px;
+  --ease:        cubic-bezier(.2, .7, .2, 1);
+  --shadow-card: 0 26px 50px -30px rgba(8, 39, 44, .45);
+  --shadow-btn:  0 12px 26px -10px rgba(232, 163, 61, .65);
+  --fs-hero:     clamp(38px, 5.4vw, 62px);
+}

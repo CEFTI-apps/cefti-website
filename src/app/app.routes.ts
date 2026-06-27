@@ -15,10 +15,27 @@ export const routes: Routes = [
   },
   {
     path: 'program',
-    loadComponent: () =>
-      import('./features/ui/programmes/programmes').then((m) => m.Programmes),
-    title: "Programme d'Etudes - Cefti",
-    data: { layout: 'public' },
+    children: [
+      { path: '', redirectTo: 'professional', pathMatch: 'full' },
+      {
+        path: 'professional',
+        loadComponent: () =>
+          import('./features/ui/programmes/programmes').then(
+            (m) => m.Programmes
+          ),
+        title: 'Filières Professionnelles - Cefti',
+        data: { layout: 'public', tab: 'pro' },
+      },
+      {
+        path: 'academic',
+        loadComponent: () =>
+          import('./features/ui/programmes/programmes').then(
+            (m) => m.Programmes
+          ),
+        title: 'Filières Académiques - Cefti',
+        data: { layout: 'public', tab: 'aca' },
+      },
+    ],
   },
   {
     path: 'activity',

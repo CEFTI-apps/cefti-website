@@ -1,18 +1,26 @@
-import { Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  HostListener,
+  signal,
+} from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  standalone:true,
-  imports: [
-    RouterLinkActive,
-    RouterLink,
-  ],
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.html',
-  styleUrl: './header.scss'
+  styleUrl: './header.scss',
 })
 export class Header {
-   open = false;
-   dropdown = false;
-}
+  readonly solid = signal(false);
+  readonly open = signal(false);
+  readonly dropdown = signal(false);
 
+  @HostListener('window:scroll')
+  onScroll(): void {
+    this.solid.set(window.scrollY > 20);
+  }
+}
