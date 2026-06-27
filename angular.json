@@ -38,7 +38,10 @@
             ],
             "polyfills": [
               "@angular/localize/init"
-            ]
+            ],
+            "optimization": {
+              "fonts": false
+            }
           },
           "configurations": {
             "production": {

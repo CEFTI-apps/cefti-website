@@ -1,0 +1,234 @@
+.programmes-page {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+/* ── EN-TÊTE ── */
+.programmes-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(32px, 4.5vw, 52px);
+    font-weight: 700;
+    color: var(--encre);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+
+    em {
+      font-style: normal;
+      color: var(--petrole);
+    }
+  }
+
+  p {
+    font-size: 1.05rem;
+    color: var(--ardoise);
+    max-width: 520px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+}
+
+/* ── ONGLETS ── */
+.tab-bar {
+  display: inline-flex;
+  background: var(--craie);
+  border-radius: var(--radius);
+  padding: 0.3rem;
+  gap: 0.3rem;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ardoise);
+  background: transparent;
+  border: none;
+  border-radius: calc(var(--radius) - 4px);
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), box-shadow 0.2s;
+
+  .tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: var(--ligne);
+    color: var(--ardoise);
+    border-radius: 50%;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  &.active {
+    background: var(--blanc);
+    color: var(--petrole);
+    box-shadow: 0 2px 8px rgba(8, 39, 44, 0.1);
+    font-weight: 600;
+
+    .tab-count {
+      background: var(--petrole);
+      color: var(--blanc);
+    }
+  }
+
+  &:hover:not(.active) {
+    color: var(--petrole);
+  }
+}
+
+/* ── GRILLE ── */
+.filieres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── CARTE FILIÈRE ── */
+.filiere-card {
+  background: var(--blanc);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  border-top: 3px solid var(--accent, var(--petrole));
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 32px 60px -28px rgba(8, 39, 44, 0.35);
+  }
+}
+
+.card-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s var(--ease);
+  }
+
+  .filiere-card:hover & img {
+    transform: scale(1.04);
+  }
+}
+
+.card-badge {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background: var(--encre);
+  color: var(--or);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+}
+
+.card-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.card-niveau {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--ardoise);
+  letter-spacing: 0.03em;
+}
+
+.card-body h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--encre);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.card-body p {
+  font-size: 0.875rem;
+  color: var(--ardoise);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--petrole);
+  text-decoration: none;
+  transition: color 0.2s, gap 0.2s;
+  gap: 0.25rem;
+
+  &:hover {
+    color: var(--or-2);
+    gap: 0.5rem;
+  }
+}
+
+/* ── SQUELETTE CHARGEMENT ── */
+.loading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-skeleton {
+  height: 340px;
+  border-radius: var(--radius);
+  background: linear-gradient(90deg, var(--craie) 25%, var(--ligne) 50%, var(--craie) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .programmes-page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .tab-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tab {
+    justify-content: center;
+  }
+
+  .filieres-grid,
+  .loading-grid {
+    grid-template-columns: 1fr;
+  }
+}

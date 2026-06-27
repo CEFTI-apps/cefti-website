@@ -1,17 +1,34 @@
-<!-- <h1 i18n> bees</h1> -->
 <div class="hero-container">
   <div class="hero-content">
-    <h1>Shape Your Future at <span>Academy</span></h1>
+    <h1>Une École, un Métier, <em>un Avenir sûr.</em></h1>
     <p>
-      Discover a world of opportunities with our diverse programs and vibrant
-      campus community. Apply today and start your journey towards success.
+      10 filières techniques et professionnelles pour acquérir un savoir-faire
+      concret, reconnu par les entreprises camerounaises et sous-régionales.
     </p>
     <div class="hero-buttons">
-      <button class="btn btn-primary">View Programs</button>
-      <button class="btn btn-secondary">Request Information</button>
+      <a class="btn btn-primary" routerLink="/program/professional">Découvrir nos filières</a>
+      <a class="btn btn-secondary" routerLink="/contact">Planifier une visite</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-value">10</span>
+        <span class="stat-label">filières pro</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">pratique</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-value">1</span>
+        <span class="stat-label">cursus académique</span>
+      </div>
     </div>
   </div>
 </div>
+
 <div>
   <app-section
     class="explore-section"
@@ -42,6 +59,7 @@
       description="Flexible online courses designed to fit your schedule, allowing you to learn from anywhere."
     ></app-explore-card>
   </app-section>
+
   <app-section
     title="Experience Campus Life"
     subtitle="Immerse yourself in a vibrant campus community with numerous clubs, organizations, and events. Our state-of-the-art facilities and dedicated support services ensure a fulfilling student experience."
@@ -64,13 +82,14 @@
       description="Benefit from comprehensive support services, including academic advising, career counseling, and wellness programs."
     ></app-feature-card>
   </app-section>
+
   <app-section
     [centered]="true"
-    title=" Ready to Begin Your Journey?"
-    subtitle="Take the first step towards a brighter future. Apply to Academy Central today and join our community of scholars and innovators."
+    title="Prêt à commencer ?"
+    subtitle="Rejoignez la communauté CEFTI et construisez un avenir professionnel solide dès aujourd'hui."
   >
     <div class="hero-buttons">
-      <button class="btn btn-primary">Apply Now</button>
+      <a class="btn btn-primary" routerLink="/program/professional">Voir nos filières</a>
     </div>
   </app-section>
 </div>

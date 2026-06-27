@@ -1,0 +1,635 @@
+[
+  {
+    "slug": "chaudronnerie",
+    "code": "CH",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Chaudronnerie",
+    "desc": "Fabrication et soudure de structures métalliques industrielles.",
+    "objectifs": [
+      "Former les ouvrages chaudronnés",
+      "Préparer et monter les structures métalliques",
+      "Former et poser les lignes de tuyauterie",
+      "Faire la soudure à l'arc électrique (111) et oxyacétylénique (311)"
+    ],
+    "debouches": [
+      "Domaines ferroviaires et aéronautiques",
+      "Constructions navales",
+      "Entreprises de fabrication chimique",
+      "Auto-emploi"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/metalique3-1-1024x676.jpeg"
+  },
+  {
+    "slug": "tuyauterie-soudure",
+    "code": "ST",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Tuyauterie-Soudure",
+    "desc": "Assemblage par fusion de pièces métalliques, toutes positions de soudure.",
+    "objectifs": [
+      "Connaître les métaux et lire les documents techniques",
+      "Découper les pièces métalliques",
+      "Maîtriser toutes les positions de soudure (111 et 311)"
+    ],
+    "debouches": [
+      "Domaines ferroviaires et aéronautiques",
+      "Constructions navales",
+      "Entreprises chimiques",
+      "Auto-emploi"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/metalique-1-1024x676.jpeg"
+  },
+  {
+    "slug": "plomberie-sanitaire",
+    "code": "ISC",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Plomberie, Installation sanitaire & Carrelage",
+    "desc": "Travaux de plomberie, pose d'appareils sanitaires et revêtements.",
+    "objectifs": [
+      "Lire et interpréter les plans d'installations sanitaires",
+      "Raccorder les tuyaux de plomberie",
+      "Poser les appareils sanitaires",
+      "Poser les carreaux (céramique, marbre, granit)"
+    ],
+    "debouches": [
+      "Entrepreneur indépendant",
+      "Entreprises de construction",
+      "Entreprises de rénovation",
+      "Entretien et maintenance"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-02-at-11.12.03-1024x680.jpeg"
+  },
+  {
+    "slug": "froid-climatisation",
+    "code": "FC",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Froid & Climatisation",
+    "desc": "Installation et maintenance des systèmes frigorifiques et climatiques.",
+    "objectifs": [
+      "Maîtriser le fonctionnement d'un système frigorifique",
+      "Lire et interpréter les schémas électriques",
+      "Installer, diagnostiquer et réparer les équipements",
+      "Respecter les normes qualité, sécurité et environnement"
+    ],
+    "debouches": [
+      "Entreprises d'installation et maintenance climatisation",
+      "Consultant en systèmes frigorifiques",
+      "Gestion de projets grande envergure",
+      "Formateur / instructeur"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/froid-et-clim-1-1024x676.jpeg"
+  },
+  {
+    "slug": "electricite",
+    "code": "ELEQ",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Électricité Résidentielle & Industrielle",
+    "desc": "Conception, installation et maintenance des systèmes électriques.",
+    "objectifs": [
+      "Concevoir et lire les schémas électriques",
+      "Maîtriser les notions de sécurité électrique",
+      "Maîtriser le câblage résidentiel et industriel",
+      "Monter et dépanner les équipements électriques"
+    ],
+    "debouches": [
+      "Technicien d'entretien et maintenance électrique",
+      "Installateur résidentiel et industriel"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/Formation-Professionelles-Eleq-1024x676.jpeg"
+  },
+  {
+    "slug": "electronique-solaire",
+    "code": "EL",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Électronique / Énergie Solaire",
+    "desc": "Circuits électroniques, énergie photovoltaïque et vidéosurveillance.",
+    "objectifs": [
+      "Lire et interpréter les schémas électroniques",
+      "Réaliser les circuits imprimés",
+      "Réaliser les installations photovoltaïques",
+      "Réaliser des installations de vidéosurveillance"
+    ],
+    "debouches": [
+      "Responsable de projets énergie renouvelable",
+      "Chef d'entreprise (enseignes lumineuses)",
+      "Formateur en énergie solaire"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/electronique.jpeg"
+  },
+  {
+    "slug": "maconnerie-genie-civil",
+    "code": "GC",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Maçonnerie / Génie Civil",
+    "desc": "Construction, BTP, béton armé et techniques de chantier modernes.",
+    "objectifs": [
+      "Faire des dessins architecturaux et bétons armés",
+      "Réaliser des poteaux, poutres et coffrages",
+      "Faire le dimensionnement des structures",
+      "Construire des édifices"
+    ],
+    "debouches": [
+      "Construction résidentielle et commerciale",
+      "Travaux publics (routes, ponts, tunnels)",
+      "Pavage et revêtements",
+      "Entrepreneur indépendant"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/maconneri-1024x575.jpeg"
+  },
+  {
+    "slug": "menuiserie",
+    "code": "ME",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Menuiserie / Ébénisterie",
+    "desc": "Travail du bois, fabrication de meubles et finitions soignées.",
+    "objectifs": [
+      "Interpréter les dessins de réalisation",
+      "Identifier les essences de bois du Cameroun",
+      "Réaliser les différents meubles",
+      "Assurer la transformation du bois"
+    ],
+    "debouches": [
+      "Entrepreneur indépendant",
+      "Entreprises de fabrication de meubles",
+      "Design de meubles sur mesure",
+      "Restauration de meubles anciens"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/ameublement-1-1024x676.jpeg"
+  },
+  {
+    "slug": "mecanique-automobile",
+    "code": "MA",
+    "cat": "pro",
+    "section": "industrielle",
+    "name": "Mécanique Automobile / Mécatronique",
+    "desc": "Diagnostic et réparation des véhicules modernes essence et diesel.",
+    "objectifs": [
+      "Maîtriser le fonctionnement des pièces mécaniques",
+      "Dépanner les moteurs essence et diesel",
+      "Utiliser les outils de diagnostic électronique",
+      "Contrôler les systèmes ABS, airbag, freinage"
+    ],
+    "debouches": [
+      "Mécanicien en garage",
+      "Responsable d'un centre technique automobile"
+    ],
+    "conditions": "Avoir 17 ans, niveau 3ème ENS. Général ou Technique. Frais dossier : 2 500F",
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/mec-et-auto-1-1024x676.jpeg"
+  },
+  {
+    "slug": "secretariat-bureautique",
+    "code": "SB",
+    "cat": "pro",
+    "section": "informatique",
+    "name": "Secrétariat Bureautique",
+    "desc": "Techniques de communication, gestion administrative et logiciels Office.",
+    "objectifs": [
+      "Maîtriser toutes les techniques de communication",
+      "Assurer la gestion des courriers",
+      "Maîtriser Word, Excel, PowerPoint, Publisher",
+      "Classer et organiser le travail administratif"
+    ],
+    "debouches": [
+      "Administration et bureautique en entreprise",
+      "Assistance virtuelle",
+      "Secrétariat médical",
+      "Secteur juridique"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-02-at-09.52.42-1024x687.jpeg"
+  },
+  {
+    "slug": "secretariat-comptable",
+    "code": "SC",
+    "cat": "pro",
+    "section": "informatique",
+    "name": "Secrétariat Comptable Bilingue",
+    "desc": "Gestion administrative bilingue, comptabilité et états financiers.",
+    "objectifs": [
+      "Réaliser les états financiers et comptables",
+      "Utiliser les logiciels de gestion comptable",
+      "Gérer les appels, courriers et agendas",
+      "Préparer des dossiers et comptes-rendus"
+    ],
+    "debouches": [
+      "Télétravail",
+      "Gestionnaire de compte",
+      "Assistant comptable"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-02-at-09.52.42-1024x687.jpeg"
+  },
+  {
+    "slug": "informatique-reseaux",
+    "code": "TI",
+    "cat": "pro",
+    "section": "informatique",
+    "name": "Informatique & Réseaux",
+    "desc": "Administration systèmes, réseaux informatiques et cybersécurité.",
+    "objectifs": [
+      "Assurer la maintenance du parc informatique",
+      "Réaliser un réseau informatique",
+      "Installer et configurer les serveurs",
+      "Installer les systèmes de vidéosurveillance"
+    ],
+    "debouches": [
+      "Technicien maintenance informatique en entreprise",
+      "Télétravail pour entreprises mondiales",
+      "Cybersécurité"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/technologie-TI-1-1024x676.jpeg"
+  },
+  {
+    "slug": "infographie-graphisme",
+    "code": "IG",
+    "cat": "pro",
+    "section": "informatique",
+    "name": "Infographie / Graphisme de Production",
+    "desc": "Conception graphique, animation 2D/3D, montage vidéo et sites web.",
+    "objectifs": [
+      "Réaliser des conceptions graphiques (affiches, dépliants, cartes)",
+      "Créer des contenus animés et interactifs",
+      "Réaliser des montages vidéo et audio",
+      "Concevoir et réaliser des sites Internet"
+    ],
+    "debouches": [
+      "Graphiste freelance",
+      "Designer graphique publicitaire",
+      "Infographiste dans les médias",
+      "Designer de produits"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/technologie-TI-1-1024x676.jpeg"
+  },
+  {
+    "slug": "metaux-en-feuille",
+    "code": "MF",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Métaux en Feuille",
+    "desc": "Transformation des métaux, soudure et techniques d'assemblage.",
+    "objectifs": [
+      "Caractériser les métaux et déterminer leur soudabilité",
+      "S'initier à la géométrie descriptive",
+      "Maîtriser les techniques de débit, usinage et conformation",
+      "Stage en entreprise dès la 4ème année"
+    ],
+    "debouches": ["Soudeur", "Tôlier/Chaudronnier", "Mécanicien industriel", "Technicien en fabrication"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-23-at-11.49.39.jpeg"
+  },
+  {
+    "slug": "construction-ouvrages-metalliques",
+    "code": "COOM",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Construction d'Ouvrages Métalliques",
+    "desc": "Préparation, assemblage et contrôle de structures métalliques.",
+    "objectifs": [
+      "Préparer et former les tôles et profilés",
+      "Effectuer les travaux d'ajustage",
+      "Assembler et contrôler les pièces",
+      "Stage en entreprise dès la 4ème année"
+    ],
+    "debouches": ["Poursuite en second cycle", "Stages en entreprise"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-23-at-11.50.07.jpeg"
+  },
+  {
+    "slug": "electronique-aca",
+    "code": "ELNI",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Électronique (ELNI)",
+    "desc": "Circuits électriques, électronique et installations photovoltaïques.",
+    "objectifs": [
+      "Appréhender l'électricité domestique",
+      "Réaliser les installations électriques domestiques",
+      "Fabriquer les circuits imprimés",
+      "Faire le montage et dépannage d'une installation photovoltaïque"
+    ],
+    "debouches": ["Poursuite en second cycle", "Stages en entreprise"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-23-at-11.57.13.jpeg"
+  },
+  {
+    "slug": "electricite-aca",
+    "code": "ELEQ-ACA",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Électricité (ELEQ)",
+    "desc": "Lois fondamentales, installations électriques résidentielles et industrielles.",
+    "objectifs": [
+      "Appliquer les lois fondamentales de l'électrotechnique",
+      "Établir les schémas d'une installation électrique",
+      "Réaliser une installation électrique résidentielle",
+      "Appréhender les machines électriques"
+    ],
+    "debouches": ["Poursuite en second cycle", "Stages en entreprise"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-23-at-11.54.30.jpeg"
+  },
+  {
+    "slug": "menuiserie-aca",
+    "code": "ME-ACA",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Menuiserie (1er cycle)",
+    "desc": "Techniques de base en menuiserie, outils, mesures et assemblage du bois.",
+    "objectifs": [
+      "Acquérir les compétences de base en menuiserie",
+      "Lire et interpréter les plans techniques",
+      "Maîtriser mesure, découpe, ponçage et assemblage",
+      "Produire des pièces de qualité"
+    ],
+    "debouches": ["Travail en usine", "Poursuite en second cycle"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-13-at-13.22.53-1024x672.jpeg"
+  },
+  {
+    "slug": "maconnerie-aca",
+    "code": "MACO",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Maçonnerie (MACO)",
+    "desc": "Construction BTP, béton armé, devis et revêtements.",
+    "objectifs": [
+      "Dessiner les éléments de construction",
+      "Appréhender les matériaux de construction BTP",
+      "Faire des devis et estimations",
+      "Réaliser des ouvrages en béton armé"
+    ],
+    "debouches": ["Poursuite en second cycle", "Stages en entreprise"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/05/F4-1024x577.jpg"
+  },
+  {
+    "slug": "froid-clim-aca",
+    "code": "FRCL",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Froid & Climatisation (FRCL)",
+    "desc": "Connexions, conduits et montages électriques pour systèmes frigorifiques.",
+    "objectifs": [
+      "Réalisation de connexions par serrage et soudage à l'étain",
+      "Mise en œuvre des conduits usuels",
+      "Montage simple allumage et va-et-vient"
+    ],
+    "debouches": ["Poursuite en second cycle", "Stages en entreprise"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/froid-et-clim-1-1024x676.jpeg"
+  },
+  {
+    "slug": "mecanique-aca",
+    "code": "MARE",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "1er cycle",
+    "name": "Mécanique Automobile (MARE)",
+    "desc": "Organes mécaniques, électriques et électroniques des véhicules.",
+    "objectifs": [
+      "Appréhender le fonctionnement des organes mécaniques",
+      "Réparer un moteur à combustion interne",
+      "Réparer les organes électriques et électroniques automobile",
+      "Réparer les organes de transmission de puissance"
+    ],
+    "debouches": ["Poursuite en second cycle", "Stages en entreprise"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-02-at-09.52.40-1024x678.jpeg"
+  },
+  {
+    "slug": "f2-electronique",
+    "code": "F2",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "F2 — Électronique",
+    "desc": "Composantes électroniques, microprocesseurs et circuits imprimés.",
+    "objectifs": [
+      "Maîtriser la technologie des composantes électroniques",
+      "Analyser les circuits avec lois et théorèmes",
+      "Faire des mesures et réaliser les montages",
+      "Programmer un système à microprocesseur"
+    ],
+    "debouches": ["Technicien électronique", "Programmeur systèmes embarqués"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/electronique-1024x676.jpeg"
+  },
+  {
+    "slug": "f3-electrotechnique",
+    "code": "F3",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "F3 — Électrotechnique",
+    "desc": "Logique combinatoire, courant alternatif et instruments de mesure.",
+    "objectifs": [
+      "Maîtriser les circuits en logique combinatoire et séquentielle",
+      "Analyser les composants optoélectroniques",
+      "Effectuer des mesures avec voltmètre, ampèremètre, oscilloscope",
+      "Rédiger un compte-rendu de manipulation"
+    ],
+    "debouches": ["Technicien électrotechnicien", "Ingénieur junior"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-23-at-16.10.28-1024x576.jpeg"
+  },
+  {
+    "slug": "f4-genie-civil",
+    "code": "F4",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "F4 — Génie Civil",
+    "desc": "Blocs béton, coffrages, enduits et techniques de gros œuvre.",
+    "objectifs": [
+      "Réaliser des éléments d'ouvrage en blocs de béton",
+      "Réaliser des coffrages en bois et châssis d'armatures",
+      "Effectuer des enduits au mortier de ciment",
+      "Maîtriser les outils à mains et mécaniques"
+    ],
+    "debouches": ["Technicien BTP", "Chef de chantier"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/05/F4-2-1024x577.jpg"
+  },
+  {
+    "slug": "f5-froid-clim",
+    "code": "F5",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "F5 — Froid & Climatisation",
+    "desc": "Cycle de réfrigération, compresseurs, détendeurs et maintenance.",
+    "objectifs": [
+      "Lire, expliquer et schématiser le cycle de réfrigération",
+      "Installer et régler les principaux types de détendeurs",
+      "Assurer la mise en service d'un système frigorifique",
+      "Planifier les travaux de réparation"
+    ],
+    "debouches": ["Technicien frigoriste", "Maintenance climatisation"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/froid-et-clim-1-1024x676.jpeg"
+  },
+  {
+    "slug": "cma-automobile",
+    "code": "CMA",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "CMA — Construction & Maintenance Véhicules",
+    "desc": "Diagnostic complet, réparation et maintenance préventive des véhicules.",
+    "objectifs": [
+      "Analyser les systèmes mécaniques",
+      "Réparer les moteurs à combustion interne",
+      "Diagnostiquer les pannes avec ordinateur",
+      "Assurer la maintenance préventive des véhicules"
+    ],
+    "debouches": [
+      "Mécanicien automobile", "Technicien de maintenance",
+      "Expert en diagnostic électronique", "Gestionnaire de flotte"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/05/mecanique-1024x794.jpg"
+  },
+  {
+    "slug": "chaudronnerie-tuyauterie",
+    "code": "CH-TI",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "CH-TI — Chaudronnerie Tuyauterie Industrielle",
+    "desc": "Fabrication, assemblage métallique et tuyauterie industrielle.",
+    "objectifs": [
+      "Appréhender les notions de la statique",
+      "Effectuer la maintenance de premier niveau",
+      "Réaliser les opérations de fabrication (poinçonnage, guillotine)",
+      "Analyser les solutions constructives (portiques, escaliers, profilés)"
+    ],
+    "debouches": ["Soudeur", "Tôlier/Chaudronnier", "Mécanicien industriel", "Technicien en fabrication"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/metalique-1-1024x676.jpeg"
+  },
+  {
+    "slug": "installation-sanitaire-hydraulique",
+    "code": "ISRH",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "ISRH — Installation Sanitaire & Réseau Hydraulique",
+    "desc": "Installations hydrauliques, réseaux d'assainissement et sanitaires.",
+    "objectifs": [
+      "Appréhender les procédés des installations hydrauliques",
+      "Gérer et recycler les eaux usées",
+      "Réaliser un réseau d'assainissement",
+      "Installer et équiper les réseaux d'eaux usées"
+    ],
+    "debouches": ["Plombier industriel", "Technicien réseau hydraulique"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-02-at-11.12.03-1024x680.jpeg"
+  },
+  {
+    "slug": "ameublement-ebenisterie",
+    "code": "AMEB",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "AMEB — Ameublement Ébénisterie",
+    "desc": "Fabrication de meubles, marqueterie, sculpture et finitions bois.",
+    "objectifs": [
+      "Dessiner des ouvrages de menuiserie",
+      "Réaliser marqueteries, sculptures et tapisserie",
+      "Fabriquer et finir les meubles en bois massif et panneaux",
+      "Identifier les essences de bois du Cameroun"
+    ],
+    "debouches": ["Ébéniste", "Designer de meubles", "Artisan bois"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/ameublement-1-1024x676.jpeg"
+  },
+  {
+    "slug": "sciences-medico-sociales",
+    "code": "F8",
+    "cat": "aca",
+    "section": "technique-industrielle",
+    "cycle": "2ème cycle",
+    "name": "F8 — Sciences Médico-Sociales",
+    "desc": "Soins infirmiers, examens de laboratoire et prise en charge psychosociale.",
+    "objectifs": [
+      "Réaliser une électrocardiographie et mesurer une glycémie",
+      "Pratiquer une réanimation cardio-pulmonaire",
+      "Pratiquer les injections (IM, IVD, sous-cutanée)",
+      "Gérer une prise en charge psychosociale"
+    ],
+    "debouches": [
+      "Études supérieures en médecine ou soins infirmiers",
+      "Travail social et psychologie",
+      "Stages en établissements de santé"
+    ],
+    "conditions": "Avoir 17 ans, niveau 3ème ENS. Frais dossier : 2 500F",
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/science-et-tech-dela-sante2-1-1024x676.jpeg"
+  },
+  {
+    "slug": "aca-communication",
+    "code": "ACA",
+    "cat": "aca",
+    "section": "technique-commerciale",
+    "cycle": "2ème cycle",
+    "name": "ACA — Action & Communication Administratives",
+    "desc": "Gestion administrative, rédaction professionnelle et prospection commerciale.",
+    "objectifs": [
+      "Classer et indexer les documents administratifs",
+      "Maîtriser la rédaction professionnelle",
+      "Tenir les livres comptables OHADA",
+      "Effectuer la prospection et fidélisation des clients"
+    ],
+    "debouches": ["Assistant administratif", "Commercial", "Gestionnaire de clientèle"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-02-at-09.52.42-1024x687.jpeg"
+  },
+  {
+    "slug": "comptabilite-gestion",
+    "code": "CG",
+    "cat": "aca",
+    "section": "technique-commerciale",
+    "cycle": "2ème cycle",
+    "name": "CG — Comptabilité & Gestion",
+    "desc": "Comptabilité OHADA, états financiers et logiciels de gestion.",
+    "objectifs": [
+      "Comprendre l'environnement comptable OHADA",
+      "Tenir les livres comptables obligatoires",
+      "Utiliser un logiciel de comptabilité",
+      "Établir et analyser des états financiers"
+    ],
+    "debouches": ["Comptable", "Assistant financier", "Gestionnaire de paie"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-02-at-09.52.42-1024x687.jpeg"
+  },
+  {
+    "slug": "enseignement-general",
+    "code": "EG",
+    "cat": "aca",
+    "section": "enseignement-general",
+    "cycle": "1er et 2ème cycle",
+    "name": "Enseignement Général",
+    "desc": "Classes de 6ème à Terminale — Maths, sciences, langues (ALL & ESP).",
+    "objectifs": [
+      "Socle solide en mathématiques, sciences et langues",
+      "Classes de 6ème, 5ème, 4ème (ALL & ESP)",
+      "Préparation au BEPC et au Baccalauréat"
+    ],
+    "debouches": ["Poursuite d'études supérieures", "Préparation aux concours"],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/02/Enseignement-General.jpeg"
+  },
+  {
+    "slug": "ti-technologies-information",
+    "code": "TI",
+    "cat": "aca",
+    "section": "enseignement-general",
+    "cycle": "2ème cycle",
+    "name": "TI — Technologies de l'Information",
+    "desc": "Algorithmique, développement web, bases de données et design graphique.",
+    "objectifs": [
+      "Écrire et interpréter des algorithmes",
+      "Créer des sites web statiques et dynamiques",
+      "Traduire un algorithme en langage C",
+      "Concevoir et administrer une base de données"
+    ],
+    "debouches": [
+      "Développeur d'applications",
+      "Designer graphique",
+      "Auto-emploi en prestation informatique"
+    ],
+    "image": "https://collegecefti.com/wp-content/uploads/2024/05/technologie-de-linformation-TI-1024x577.jpg"
+  }
+]
