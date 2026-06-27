@@ -13,10 +13,10 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      "i18n":{
-        "sourceLocale":"fr",
+      "i18n": {
+        "sourceLocale": "fr",
         "locales": {
-            "en":"public/locale/messages.en.json"
+          "en": "public/locale/messages.en.json"
         }
       },
       "architect": {
@@ -36,11 +36,6 @@
             "styles": [
               "src/styles.scss"
             ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            },
             "polyfills": [
               "@angular/localize/init"
             ]
