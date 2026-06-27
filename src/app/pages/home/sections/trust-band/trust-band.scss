@@ -1,0 +1,111 @@
+.trust-band {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  background: var(--petrole, #08272c);
+  border-radius: 12px;
+  margin: 0 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  transition: background 0.2s;
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  &.skeleton {
+    &::after { display: none; }
+    &::before {
+      content: '';
+      display: block;
+      width: 80%;
+      height: 56px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, rgba(255,255,255,.06) 25%, rgba(255,255,255,.12) 50%, rgba(255,255,255,.06) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+    }
+  }
+}
+
+.stat-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--or, #d4a017);
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.stat-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--or, #d4a017);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@media (max-width: 768px) {
+  .trust-band {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 1rem;
+
+    .stat-item:nth-child(2)::after { display: none; }
+    .stat-item:nth-child(odd):not(:last-child)::after {
+      right: 0; top: 20%; height: 60%;
+      display: block;
+    }
+    .stat-item:nth-child(1),
+    .stat-item:nth-child(2) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .trust-band {
+    grid-template-columns: 1fr;
+    margin: 0;
+    border-radius: 0;
+
+    .stat-item::after { display: none !important; }
+    .stat-item:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+}

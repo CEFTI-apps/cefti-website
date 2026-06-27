@@ -1,5 +1,5 @@
 import { Directive, ElementRef, OnInit } from '@angular/core';
-@Directive({ selector: '[revealOnScroll]' })
+@Directive({ selector: '[revealOnScroll]', standalone: true })
 export class RevealOnScrollDirective implements OnInit {
   constructor(private el: ElementRef) {}
   ngOnInit() {

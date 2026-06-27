@@ -1,0 +1,39 @@
+<section class="cta-band reveal" revealOnScroll>
+  <div class="cta-band-inner">
+
+    <!-- Colonne gauche : formulaire -->
+    <div class="cta-left">
+      <span class="eyebrow">Admissions ouvertes</span>
+      <h2>Prêt à construire <em>ton avenir ?</em></h2>
+      <p>Reçois nos informations d'admission directement dans ta boîte mail. Gratuit, sans spam.</p>
+
+      <form class="cta-form" (submit)="onSubmit($event)" novalidate>
+        <div class="cta-form-row">
+          <input
+            type="email"
+            placeholder="Ton adresse email"
+            [value]="email()"
+            (input)="email.set($any($event.target).value)"
+            autocomplete="email"
+            aria-label="Adresse email"
+          />
+          <button type="submit" class="btn-or">S'abonner</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Colonne droite : étapes -->
+    <div class="cta-right">
+      @for (etape of etapes; track etape.num) {
+        <div class="etape-chip">
+          <span class="etape-num">{{ etape.num }}</span>
+          <div class="etape-content">
+            <strong>{{ etape.title }}</strong>
+            <span>{{ etape.desc }}</span>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>
