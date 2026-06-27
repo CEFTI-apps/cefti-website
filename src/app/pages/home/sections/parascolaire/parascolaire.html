@@ -8,15 +8,17 @@
   <div class="activites-grid">
     @for (act of activites; track act.slug) {
       <article class="activite-card">
-        <div class="activite-image">
-          <img [src]="act.image" [alt]="act.title" loading="lazy" />
+        <div class="activite-image" [style.background]="act.bgGradient">
+          @if (act.image) {
+            <img [src]="act.image" [alt]="act.title" loading="lazy" />
+          }
           <div class="activite-overlay">
             <div class="activite-icon" aria-hidden="true">
 
               @if (act.icon === 'run') {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="13" cy="5" r="1"/><path d="M7 20l4-4 4 4"/>
-                  <path d="M7 11.5l2.5-2.5L12 11l3-3 2 2"/>
+                  <circle cx="13" cy="5" r="1"/>
+                  <path d="m9 20 3-6 2 3 3-3 2 2"/><path d="m6.5 17 1.5-6 3.5 3"/>
                 </svg>
               }
 

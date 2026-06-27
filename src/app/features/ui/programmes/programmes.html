@@ -44,7 +44,7 @@
             @if (filiere.conditions) {
               <p class="card-conditions">{{ filiere.conditions }}</p>
             }
-            <a class="card-cta" routerLink="/contact">En savoir plus →</a>
+            <a class="card-cta" [routerLink]="['/program/filieres', filiere.slug]">En savoir plus →</a>
           </div>
         </article>
       }

@@ -1,6 +1,6 @@
 [
-  { "value": "34",   "label": "filières officielles",  "icon": "book" },
-  { "value": "100%", "label": "formation pratique",    "icon": "wrench" },
-  { "value": "15+",  "label": "années d'expérience",   "icon": "calendar" },
-  { "value": "+500", "label": "diplômés insérés",       "icon": "users" }
+  { "value": "34",   "label": "filières officielles", "icon": "book",     "pending": false },
+  { "value": "100%", "label": "formation pratique",   "icon": "wrench",   "pending": false },
+  { "value": "10+",  "label": "années d'existence",   "icon": "calendar", "pending": true  },
+  { "value": "500+", "label": "diplômés formés",      "icon": "users",    "pending": true  }
 ]

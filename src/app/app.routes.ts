@@ -35,6 +35,15 @@ export const routes: Routes = [
         title: 'Filières Académiques - Cefti',
         data: { layout: 'public', tab: 'aca' },
       },
+      {
+        path: 'filieres/:slug',
+        loadComponent: () =>
+          import('./features/ui/filiere-detail/filiere-detail').then(
+            (m) => m.FiliereDetail
+          ),
+        title: 'Filière - Cefti',
+        data: { layout: 'public' },
+      },
     ],
   },
   {

@@ -15,15 +15,13 @@ type Tab = 'pro' | 'aca' | 'all';
 })
 export class Programmes {
   private readonly route = inject(ActivatedRoute);
-  private readonly filieresService = inject(FilieresService);
+  private readonly svc = inject(FilieresService);
 
   readonly activeTab = signal<Tab>(
     (this.route.snapshot.data['tab'] as Tab) ?? 'all'
   );
 
-  readonly filieres = this.filieresService.filieres;
-
-  readonly allFilieres = computed<Filiere[]>(() => this.filieres.value() ?? []);
+  readonly allFilieres = computed<Filiere[]>(() => this.svc.all());
 
   readonly filtered = computed<Filiere[]>(() => {
     const tab = this.activeTab();
@@ -35,7 +33,7 @@ export class Programmes {
   readonly acaCount = computed(() => this.allFilieres().filter((f) => f.cat === 'aca').length);
   readonly totalCount = computed(() => this.allFilieres().length);
 
-  readonly isLoading = computed(() => this.filieres.isLoading());
+  readonly isLoading = computed(() => this.svc.isLoading());
 
   setTab(tab: Tab): void {
     this.activeTab.set(tab);

@@ -1,0 +1,113 @@
+@let f = filiere();
+
+@if (isLoading()) {
+  <div class="detail-loading">
+    <div class="skeleton-hero"></div>
+    <div class="skeleton-body">
+      <div class="skeleton-block"></div>
+      <div class="skeleton-block short"></div>
+    </div>
+  </div>
+
+} @else if (notFound()) {
+  <div class="detail-not-found">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+    </svg>
+    <h2>Filière introuvable</h2>
+    <p>La filière <strong>{{ slug() }}</strong> n'existe pas dans notre catalogue.</p>
+    <a routerLink="/program/professional" class="btn--outline">Voir toutes les filières</a>
+  </div>
+
+} @else if (f) {
+
+  <!-- ── MINI HERO ── -->
+  <div class="detail-hero">
+    <div class="blueprint-grid" aria-hidden="true"></div>
+    <div class="detail-hero-inner">
+
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a routerLink="/home">Accueil</a>
+        <span aria-hidden="true">›</span>
+        <a [routerLink]="programLink(f.cat)">Programmes</a>
+        <span aria-hidden="true">›</span>
+        <span>{{ f.name }}</span>
+      </nav>
+
+      <div class="detail-badges">
+        <span class="badge badge--code">{{ f.code }}</span>
+        <span class="badge badge--section">{{ sectionLabel(f.section) }}</span>
+        @if (f.cycle) {
+          <span class="badge badge--cycle">{{ f.cycle }}</span>
+        }
+      </div>
+
+      <h1>{{ f.name }}</h1>
+      <p class="detail-desc">{{ f.desc }}</p>
+
+    </div>
+  </div>
+
+  <!-- ── CONTENU PRINCIPAL ── -->
+  <div class="detail-body">
+
+    <!-- Colonne gauche -->
+    <div class="detail-left">
+      <div class="detail-image">
+        <img [src]="f.image" [alt]="f.name" loading="lazy" />
+      </div>
+
+      <div class="detail-objectifs">
+        <h2>Objectifs de formation</h2>
+        <ul>
+          @for (obj of f.objectifs; track $index) {
+            <li>{{ obj }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+
+    <!-- Colonne droite -->
+    <div class="detail-right">
+
+      <div class="detail-card">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Débouchés professionnels
+        </h3>
+        <ul class="debouches-list">
+          @for (d of f.debouches; track $index) {
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              {{ d }}
+            </li>
+          }
+        </ul>
+      </div>
+
+      @if (f.conditions) {
+        <div class="detail-card detail-card--conditions">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+            Conditions d'admission
+          </h3>
+          <p>{{ f.conditions }}</p>
+        </div>
+      }
+
+      <div class="detail-ctas">
+        <a routerLink="/ask" class="btn--gold">Candidater maintenant</a>
+        <a [routerLink]="programLink(f.cat)" class="btn--outline">Voir toutes les filières</a>
+      </div>
+
+    </div>
+
+  </div>
+
+}

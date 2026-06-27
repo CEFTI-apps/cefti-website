@@ -87,11 +87,11 @@
 .activite-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(8, 39, 44, 0.55);
+  background: rgba(8, 39, 44, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.25s;
 }
 

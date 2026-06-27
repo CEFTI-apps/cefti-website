@@ -75,6 +75,13 @@
   letter-spacing: 0.06em;
 }
 
+.stat-pending {
+  font-size: 0.6rem;
+  color: rgba(212, 160, 23, 0.5);
+  line-height: 1;
+  cursor: default;
+}
+
 @keyframes shimmer {
   0%   { background-position: 200% 0; }
   100% { background-position: -200% 0; }
