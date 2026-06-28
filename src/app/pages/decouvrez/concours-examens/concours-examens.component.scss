@@ -1,0 +1,208 @@
+/* ── Section EXAMENS (fond craie) ── */
+.examens-section {
+  padding: 4rem 0 4.5rem;
+  background: var(--craie, #f4f6f5);
+}
+
+/* ── Section CONCOURS (fond encre) ── */
+.concours-section {
+  padding: 4rem 0 5rem;
+  background: var(--encre, #08272c);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+}
+
+.section-inner {
+  max-width: var(--maxw, 1180px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+/* ── Headers ── */
+.section-header {
+  margin-bottom: 2.5rem;
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--petrole, #0e5a63);
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 800;
+    color: var(--encre, #08272c);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  &--light {
+    .eyebrow { color: var(--or, #e8a33d); }
+    h2 { color: #fff; }
+  }
+}
+
+.section-lead {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* ── Eval cards ── */
+.eval-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.eval-card {
+  border-radius: var(--radius, 16px);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  &--cc {
+    background: #fff;
+    border: 1px solid var(--ligne, #dce6e4);
+    box-shadow: 0 2px 12px rgba(8, 39, 44, 0.06);
+
+    h3 { color: var(--encre, #08272c); }
+    p { color: #4a5568; }
+
+    .eval-pct {
+      color: var(--or, #e8a33d);
+    }
+  }
+
+  &--harmonisee {
+    background: var(--petrole, #0e5a63);
+    color: #fff;
+
+    h3 { color: #fff; }
+    p { color: rgba(255, 255, 255, 0.8); }
+
+    .eval-pct {
+      color: var(--or, #e8a33d);
+    }
+  }
+}
+
+.eval-pct {
+  font-family: 'Space Mono', monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.eval-weight {
+  font-size: 0.8rem !important;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+/* ── Concours infos ── */
+.concours-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.concours-info-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+
+    strong { color: var(--or, #e8a33d); font-weight: 600; }
+    sup { font-size: 0.65em; }
+  }
+}
+
+.concours-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--or, #e8a33d);
+  }
+}
+
+.btn-gold {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: var(--or, #e8a33d);
+  color: #08272c;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.97rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: filter 0.2s, transform 0.15s;
+
+  &:hover {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .eval-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .examens-section,
+  .concours-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+}

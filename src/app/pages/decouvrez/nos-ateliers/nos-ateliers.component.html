@@ -1,0 +1,29 @@
+<app-page-hero
+  title="Nos Ateliers"
+  subtitle="Le cœur de la formation au CEFTI — des espaces équipés du matériel professionnel utilisé en entreprise."
+  eyebrow="Équipements"
+  [breadcrumbs]="breadcrumbs"
+/>
+
+<section class="ateliers-section" revealOnScroll>
+  <div class="ateliers-inner">
+
+    <p class="ateliers-intro">
+      Les ateliers du CEFTI sont le cœur de la formation. Chaque filière dispose d'un espace
+      technique dédié, équipé du matériel professionnel utilisé en entreprise.
+    </p>
+
+    <div class="ateliers-grid">
+      @for (atelier of ateliers; track atelier.nom) {
+        <article class="atelier-card">
+          <div class="atelier-image">
+            <img [src]="atelier.image" [alt]="atelier.nom" loading="lazy" />
+            <div class="atelier-overlay"></div>
+            <h3 class="atelier-label">{{ atelier.nom }}</h3>
+          </div>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>

@@ -47,6 +47,74 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'decouvrez',
+    children: [
+      {
+        path: 'mot-fondateur',
+        loadComponent: () =>
+          import('./pages/decouvrez/mot-fondateur/mot-fondateur.component').then(
+            (m) => m.MotFondateurComponent
+          ),
+        title: 'Mot du Président Fondateur - Cefti',
+        data: { layout: 'public' },
+      },
+      {
+        path: 'historique',
+        loadComponent: () =>
+          import('./pages/decouvrez/historique/historique.component').then(
+            (m) => m.HistoriqueComponent
+          ),
+        title: 'Historique - Cefti',
+        data: { layout: 'public' },
+      },
+      {
+        path: 'missions',
+        loadComponent: () =>
+          import('./pages/decouvrez/missions/missions.component').then(
+            (m) => m.MissionsComponent
+          ),
+        title: 'Missions, Visions, Valeurs - Cefti',
+        data: { layout: 'public' },
+      },
+      {
+        path: 'nos-atouts',
+        loadComponent: () =>
+          import('./pages/decouvrez/nos-atouts/nos-atouts.component').then(
+            (m) => m.NosAtoutsComponent
+          ),
+        title: 'Nos Atouts - Cefti',
+        data: { layout: 'public' },
+      },
+      {
+        path: 'concours-examens',
+        loadComponent: () =>
+          import('./pages/decouvrez/concours-examens/concours-examens.component').then(
+            (m) => m.ConcoursExamensComponent
+          ),
+        title: 'Concours & Examens - Cefti',
+        data: { layout: 'public' },
+      },
+      {
+        path: 'nos-batiments',
+        loadComponent: () =>
+          import('./pages/decouvrez/nos-batiments/nos-batiments.component').then(
+            (m) => m.NosBatimentsComponent
+          ),
+        title: 'Nos Bâtiments - Cefti',
+        data: { layout: 'public' },
+      },
+      {
+        path: 'nos-ateliers',
+        loadComponent: () =>
+          import('./pages/decouvrez/nos-ateliers/nos-ateliers.component').then(
+            (m) => m.NosAteliersComponent
+          ),
+        title: 'Nos Ateliers - Cefti',
+        data: { layout: 'public' },
+      },
+    ],
+  },
+  {
     path: 'activity',
     loadComponent: () =>
       import('./features/ui/activity-school/activity-school').then(

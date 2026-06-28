@@ -1,0 +1,85 @@
+.page-hero {
+  position: relative;
+  background: var(--encre, #08272c);
+  overflow: hidden;
+  padding: 4rem 0 3.25rem;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+}
+
+.blueprint-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.page-hero-inner {
+  position: relative;
+  max-width: var(--maxw, 1180px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.15s;
+    &:hover { color: var(--or, #e8a33d); }
+  }
+
+  span:last-of-type {
+    color: var(--or, #e8a33d);
+    font-weight: 500;
+  }
+}
+
+/* ── Content ── */
+.eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--or, #e8a33d);
+  margin-bottom: 0.65rem;
+}
+
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.12;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1.02rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 3rem 0 2.25rem;
+    min-height: 220px;
+  }
+}

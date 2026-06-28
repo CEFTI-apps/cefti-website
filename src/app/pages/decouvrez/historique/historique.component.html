@@ -1,0 +1,26 @@
+<app-page-hero
+  title="Notre Histoire"
+  subtitle="De 1992 à aujourd'hui — trois décennies de formation technique d'excellence."
+  [breadcrumbs]="breadcrumbs"
+/>
+
+<section class="historique-section" revealOnScroll>
+  <div class="historique-inner">
+
+    <div class="timeline">
+      @for (etape of etapes; track etape.annee; let last = $last) {
+        <div class="timeline-item" [class.last]="last">
+          <div class="timeline-marker">
+            <span class="timeline-annee">{{ etape.annee }}</span>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>{{ etape.titre }}</h3>
+            <p>{{ etape.desc }}</p>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

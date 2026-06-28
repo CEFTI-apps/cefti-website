@@ -1,0 +1,43 @@
+<app-page-hero
+  title="Nos Bâtiments"
+  subtitle="Un cadre moderne pensé pour accueillir les formations techniques dans les meilleures conditions."
+  eyebrow="Infrastructures"
+  [breadcrumbs]="breadcrumbs"
+/>
+
+<section class="batiments-section" revealOnScroll>
+  <div class="batiments-inner">
+
+    <div class="batiments-intro">
+      <span class="intro-eyebrow">Nos Infrastructures</span>
+      <h2>Un cadre conçu pour apprendre</h2>
+      <p class="intro-lead">
+        Les bâtiments du CEFTI ont été pensés pour accueillir les formations techniques dans
+        les meilleures conditions. Ateliers spacieux, salles équipées et espaces de vie
+        adaptés à la communauté estudiantine.
+      </p>
+    </div>
+
+    <div class="batiments-gallery">
+      @for (espace of espaces; track espace.label) {
+        <div class="gallery-card">
+          <div class="gallery-visual" [style.background]="espace.gradient">
+            <div class="gallery-grid" aria-hidden="true"></div>
+            <svg class="gallery-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <div class="gallery-label">
+            <span>{{ espace.label }}</span>
+          </div>
+        </div>
+      }
+    </div>
+
+    <p class="batiments-note">
+      📸 Photos à ajouter — contactez l'administration pour fournir les visuels officiels.
+    </p>
+
+  </div>
+</section>

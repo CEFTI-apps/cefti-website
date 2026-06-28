@@ -1,0 +1,122 @@
+.batiments-section {
+  padding: 4rem 0 5.5rem;
+  background: var(--craie, #f4f6f5);
+}
+
+.batiments-inner {
+  max-width: var(--maxw, 1180px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Intro ── */
+.batiments-intro {
+  margin-bottom: 3rem;
+  max-width: 760px;
+}
+
+.intro-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--petrole, #0e5a63);
+  margin-bottom: 0.6rem;
+}
+
+.batiments-intro h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--encre, #08272c);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.85rem;
+}
+
+.intro-lead {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* ── Gallery ── */
+.batiments-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-card {
+  border-radius: var(--radius, 16px);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(8, 39, 44, 0.1);
+}
+
+.gallery-visual {
+  position: relative;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.gallery-icon {
+  width: 56px;
+  height: 56px;
+  stroke: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.gallery-label {
+  background: #fff;
+  padding: 0.9rem 1.25rem;
+  border-top: 1px solid var(--ligne, #dce6e4);
+
+  span {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--encre, #08272c);
+  }
+}
+
+/* ── Note ── */
+.batiments-note {
+  font-size: 0.85rem;
+  color: var(--ardoise, #54686b);
+  font-style: italic;
+  padding: 0.75rem 1rem;
+  background: rgba(8, 39, 44, 0.04);
+  border-radius: 8px;
+  border-left: 3px solid rgba(8, 39, 44, 0.15);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .batiments-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .batiments-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .batiments-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,181 @@
+.fondateur-section {
+  padding: 4rem 0 5rem;
+  background: var(--craie, #f4f6f5);
+}
+
+.fondateur-inner {
+  max-width: var(--maxw, 1180px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* ── Profil gauche ── */
+.fondateur-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-photo-wrap {
+  border-radius: var(--radius, 16px);
+  overflow: hidden;
+  background: var(--encre, #08272c);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 360px;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 340px;
+  display: block;
+  object-fit: contain;
+}
+
+.profile-card {
+  background: var(--encre, #08272c);
+  border-radius: var(--radius, 16px);
+  padding: 1.5rem 1.75rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.profile-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--or, #e8a33d);
+  color: #08272c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.profile-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.profile-title {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.45;
+}
+
+.profile-year {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-year-label {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.profile-year-value {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--or, #e8a33d);
+}
+
+/* ── Éditorial droite ── */
+.fondateur-editorial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.editorial-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+    font-weight: 800;
+    color: var(--encre, #08272c);
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+}
+
+.editorial-tag {
+  font-size: 0.9rem;
+  color: var(--ardoise, #54686b);
+  font-style: italic;
+}
+
+.editorial-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2d3748;
+  }
+}
+
+.editorial-quote {
+  border-left: 4px solid var(--or, #e8a33d);
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: rgba(232, 163, 61, 0.07);
+  border-radius: 0 var(--radius-sm, 10px) var(--radius-sm, 10px) 0;
+
+  p {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--encre, #08272c);
+    line-height: 1.7;
+    margin: 0 0 0.6rem;
+    font-weight: 500;
+  }
+
+  cite {
+    font-size: 0.85rem;
+    color: var(--ardoise, #54686b);
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .fondateur-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .profile-photo-wrap {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fondateur-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+}
