@@ -12,7 +12,7 @@
 .atouts-intro {
   font-size: 1.05rem;
   line-height: 1.75;
-  color: #4a5568;
+  color: var(--ardoise, #54686b);
   max-width: 760px;
   margin: 0 0 2.75rem;
 }
@@ -29,13 +29,15 @@
   border-radius: var(--radius, 16px);
   padding: 1.75rem;
   border: 1px solid var(--ligne, #dce6e4);
-  box-shadow: 0 2px 16px rgba(8, 39, 44, 0.05);
+  border-top: 3px solid transparent;
+  box-shadow: 0 2px 20px rgba(8, 39, 44, 0.05);
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: border-top-color 0.2s, box-shadow 0.25s, transform 0.2s;
 
   &:hover {
+    border-top-color: var(--or, #e8a33d);
     box-shadow: 0 8px 28px rgba(8, 39, 44, 0.1);
     transform: translateY(-2px);
   }
@@ -86,7 +88,7 @@
 .atout-body p {
   font-size: 0.92rem;
   line-height: 1.7;
-  color: #4a5568;
+  color: var(--ardoise, #54686b);
   margin: 0;
 }
 

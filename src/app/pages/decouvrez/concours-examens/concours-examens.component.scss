@@ -62,7 +62,7 @@
 .section-lead {
   font-size: 1rem;
   line-height: 1.7;
-  color: #4a5568;
+  color: var(--ardoise, #54686b);
   max-width: 640px;
   margin: 0;
 }
@@ -100,7 +100,7 @@
     box-shadow: 0 2px 12px rgba(8, 39, 44, 0.06);
 
     h3 { color: var(--encre, #08272c); }
-    p { color: #4a5568; }
+    p { color: var(--ardoise, #54686b); }
 
     .eval-pct {
       color: var(--or, #e8a33d);

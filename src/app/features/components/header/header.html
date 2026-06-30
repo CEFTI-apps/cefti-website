@@ -6,10 +6,11 @@
       </a>
     </div>
 
-    <ul class="link">
+    <!-- Desktop links -->
+    <ul class="link nav-center">
       <li class="dropdown-container">
         <a class="dropdown-toggle" tabindex="0">
-          Découvrez le CEFTI <span class="arrow">▼</span>
+          Découvrez le CEFTI <span class="arrow">▾</span>
         </a>
         <ul class="dropdown-menu">
           <li><a routerLink="/decouvrez/mot-fondateur" routerLinkActive="active">Mot du Président Fondateur</a></li>
@@ -24,42 +25,85 @@
 
       <li class="dropdown-container">
         <a class="dropdown-toggle" tabindex="0">
-          Programmes <span class="arrow">▼</span>
+          Programmes <span class="arrow">▾</span>
         </a>
         <ul class="dropdown-menu">
-          <li>
-            <a routerLink="/program/professional" routerLinkActive="active">
-              Professionnel
-            </a>
-          </li>
-          <li>
-            <a routerLink="/program/academic" routerLinkActive="active">
-              Académique
-            </a>
-          </li>
+          <li><a routerLink="/program/professional" routerLinkActive="active">Professionnel</a></li>
+          <li><a routerLink="/program/academic" routerLinkActive="active">Académique</a></li>
         </ul>
       </li>
 
-      <li>
-        <a routerLink="/activity" routerLinkActive="active">Activités</a>
-      </li>
-      <li>
-        <a routerLink="/employe" routerLinkActive="active">Personnels</a>
-      </li>
-      <li>
-        <a routerLink="/contact" routerLinkActive="active">Nous Joindre</a>
-      </li>
+      <li><a class="nav-link" routerLink="/activity" routerLinkActive="active">Activités</a></li>
+      <li><a class="nav-link" routerLink="/employe" routerLinkActive="active">Personnels</a></li>
+      <li><a class="nav-link" routerLink="/contact" routerLinkActive="active">Nous Joindre</a></li>
     </ul>
 
-    <div class="right-card">
+    <!-- Desktop right -->
+    <div class="right-card nav-center">
       <ul class="nav-right">
         <li>
-          <a routerLink="/visit" routerLinkActive="active">Visitez</a>
+          <a class="nav-visit" routerLink="/visit" routerLinkActive="active">Visitez</a>
         </li>
         <li>
-          <button class="btn-requete" routerLink="/ask">Requête</button>
+          <button class="btn-requete" routerLink="/ask">
+            Requête
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
         </li>
       </ul>
     </div>
+
+    <!-- Hamburger -->
+    <button
+      class="hamburger"
+      [class.is-open]="open()"
+      (click)="open.set(!open())"
+      aria-label="Ouvrir le menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" [class.open]="open()">
+    <ul class="mobile-links">
+      <li class="dropdown-container mob-dropdown">
+        <a class="dropdown-toggle" tabindex="0">
+          Découvrez le CEFTI <span class="arrow">▾</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/decouvrez/mot-fondateur" routerLinkActive="active" (click)="open.set(false)">Mot du Président Fondateur</a></li>
+          <li><a routerLink="/decouvrez/historique" routerLinkActive="active" (click)="open.set(false)">Historique</a></li>
+          <li><a routerLink="/decouvrez/missions" routerLinkActive="active" (click)="open.set(false)">Missions, Visions, Valeurs</a></li>
+          <li><a routerLink="/decouvrez/nos-atouts" routerLinkActive="active" (click)="open.set(false)">Nos Atouts</a></li>
+          <li><a routerLink="/decouvrez/concours-examens" routerLinkActive="active" (click)="open.set(false)">Concours &amp; Examens</a></li>
+          <li><a routerLink="/decouvrez/nos-batiments" routerLinkActive="active" (click)="open.set(false)">Nos Bâtiments</a></li>
+          <li><a routerLink="/decouvrez/nos-ateliers" routerLinkActive="active" (click)="open.set(false)">Nos Ateliers</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown-container mob-dropdown">
+        <a class="dropdown-toggle" tabindex="0">
+          Programmes <span class="arrow">▾</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/program/professional" routerLinkActive="active" (click)="open.set(false)">Professionnel</a></li>
+          <li><a routerLink="/program/academic" routerLinkActive="active" (click)="open.set(false)">Académique</a></li>
+        </ul>
+      </li>
+
+      <li><a routerLink="/activity" routerLinkActive="active" (click)="open.set(false)">Activités</a></li>
+      <li><a routerLink="/employe" routerLinkActive="active" (click)="open.set(false)">Personnels</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="open.set(false)">Nous Joindre</a></li>
+    </ul>
+
+    <div class="mobile-cta">
+      <a routerLink="/visit" routerLinkActive="active" (click)="open.set(false)">Visitez</a>
+      <button class="btn-requete" routerLink="/ask" (click)="open.set(false)">Requête</button>
+    </div>
+  </div>
 </header>

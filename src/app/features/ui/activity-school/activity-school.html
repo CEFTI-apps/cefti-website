@@ -1,1 +1,69 @@
-<p>activity-school works!</p>
+<app-page-hero
+  title="Activités & Vie Scolaire"
+  eyebrow="Vie au collège"
+/>
+
+<!-- Section 1 — Sport -->
+<section class="sport-section">
+  <div class="section-inner">
+    <div class="section-header" revealOnScroll>
+      <span class="eyebrow-tag">Sports</span>
+      <h2>L'excellence par le sport</h2>
+      <p class="section-lead">Au CEFTI, le sport est un pilier de l'éducation. Nos élèves s'engagent dans des disciplines variées qui forgent le caractère et l'esprit d'équipe.</p>
+    </div>
+
+    <div class="sport-layout" revealOnScroll>
+      <div class="sport-image">
+        <img
+          src="https://collegecefti.com/wp-content/uploads/2024/03/sport-cefti-576x1024.jpeg"
+          alt="Élèves du CEFTI pratiquant le sport"
+          loading="lazy"
+        />
+      </div>
+      <div class="sport-cards">
+        @for (sport of sports; track sport.name) {
+          <div class="sport-card">
+            <h3>{{ sport.name }}</h3>
+            <p>{{ sport.desc }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2 — Culture & Gastronomie -->
+<section class="culture-section">
+  <div class="section-inner">
+    <div class="section-header" revealOnScroll>
+      <span class="eyebrow-tag">Culture &amp; Gastronomie</span>
+      <h2>Enrichissement culturel</h2>
+      <p class="section-lead">La vie au CEFTI déborde d'activités qui ouvrent l'esprit et célèbrent la richesse des cultures camerounaises et africaines.</p>
+    </div>
+
+    <div class="culture-grid" revealOnScroll>
+      @for (item of culture; track item.name) {
+        <div class="culture-card">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Section 3 — CTA -->
+<section class="cta-section">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="cta-inner" revealOnScroll>
+    <span class="eyebrow-tag light">Rejoins-nous</span>
+    <h2>Rejoins la communauté CEFTI</h2>
+    <p>Des activités sportives et culturelles qui façonnent des personnalités épanouies, prêtes à relever les défis de demain.</p>
+    <a class="btn-cta" routerLink="/ask">
+      Faire une demande d'inscription
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+</section>
