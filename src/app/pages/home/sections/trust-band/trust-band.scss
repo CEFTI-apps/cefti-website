@@ -3,8 +3,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   background: var(--petrole, #08272c);
-  border-radius: 12px;
-  margin: 0 1.5rem;
+  border-radius: 0;
+  margin: 0;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
@@ -90,7 +90,7 @@
 @media (max-width: 768px) {
   .trust-band {
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 1rem;
+    margin: 0;
 
     .stat-item:nth-child(2)::after { display: none; }
     .stat-item:nth-child(odd):not(:last-child)::after {
@@ -107,8 +107,6 @@
 @media (max-width: 420px) {
   .trust-band {
     grid-template-columns: 1fr;
-    margin: 0;
-    border-radius: 0;
 
     .stat-item::after { display: none !important; }
     .stat-item:not(:last-child) {

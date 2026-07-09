@@ -1,0 +1,143 @@
+:host { display: block; }
+
+/* ── Sections par département ── */
+.dept-section {
+  padding: 4.5rem 0 5rem;
+  background: #fff;
+
+  &.alt { background: var(--craie, #f4f6f5); }
+}
+
+.dept-inner {
+  max-width: var(--maxw, 1180px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── En-tête département ── */
+.dept-header {
+  margin-bottom: 2.5rem;
+}
+
+.dept-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 0.5rem;
+}
+
+.dept-header h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 800;
+  color: var(--encre);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* ── Grille membres ── */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  &.direction-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 640px;
+  }
+}
+
+/* ── Carte membre ── */
+.member-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(8, 39, 44, 0.06);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(8, 39, 44, 0.12);
+  }
+
+  .alt & {
+    background: #fff;
+  }
+}
+
+/* Avatar initiales (placeholder avant photo réelle) */
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+
+/* Classe à activer une fois la vraie photo disponible */
+.member-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin: 0 auto 1.25rem;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--encre);
+  margin: 0 0 0.35rem;
+}
+
+.member-role {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--or);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 0 0 0.9rem;
+}
+
+.member-bio {
+  font-size: 0.87rem;
+  color: var(--ardoise);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    &.direction-grid { max-width: 100%; }
+  }
+}
+
+@media (max-width: 560px) {
+  .members-grid { grid-template-columns: 1fr; }
+
+  .dept-section { padding: 3rem 0 3.5rem; }
+}

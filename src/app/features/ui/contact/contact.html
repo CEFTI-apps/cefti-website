@@ -1,0 +1,131 @@
+<app-page-hero
+  title="Nous Joindre"
+  eyebrow="Contact"
+  subtitle="Une question ? Une démarche d'inscription ? Notre équipe vous répond dans les 48 heures."
+/>
+
+<section class="contact-section">
+  <div class="contact-inner">
+
+    <!-- ── Colonne formulaire ── -->
+    <div class="contact-form-col" revealOnScroll>
+      <h2>Envoyer un message</h2>
+      <p class="form-lead">Remplissez ce formulaire et nous vous contacterons dans les plus brefs délais.</p>
+
+      @if (submitState() === 'success') {
+        <div class="success-banner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Message envoyé avec succès ! Nous vous répondrons sous 48 heures.
+        </div>
+      }
+
+      @if (submitState() === 'idle') {
+        <form class="contact-form" (submit)="onSubmit($event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom complet</label>
+              <input id="nom" type="text" name="nom" placeholder="Jean Dupont" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input id="email" type="email" name="email" placeholder="vous&#64;example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="objet">Objet</label>
+            <select id="objet" name="objet" required>
+              <option value="" disabled selected>Choisir un objet…</option>
+              <option value="inscription">Demande d'inscription</option>
+              <option value="information">Informations sur une filière</option>
+              <option value="visite">Planifier une visite</option>
+              <option value="partenariat">Partenariat / Entreprise</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Envoyer le message
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      }
+    </div>
+
+    <!-- ── Colonne infos ── -->
+    <div class="contact-info-col" revealOnScroll>
+      <div class="info-card">
+        <h3>Informations de contact</h3>
+
+        <ul class="info-list">
+          <li>
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="info-label">Adresse</span>
+              <span class="info-value">Yaoundé, Cameroun<br/>Quartier Melen</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="info-label">E-mail</span>
+              <a href="mailto:contact@collegecefti.com" class="info-value info-link">contact&#64;collegecefti.com</a>
+            </div>
+          </li>
+          <li>
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.44a2 2 0 0 1 1.99-2.18H5.5a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L6.91 8.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 15.5v1.42z"/></svg>
+            </div>
+            <div>
+              <span class="info-label">Téléphone</span>
+              <a href="tel:+237000000000" class="info-value info-link">+237 000 000 000</a>
+            </div>
+          </li>
+          <li>
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <span class="info-label">Horaires d'ouverture</span>
+              <span class="info-value">Lun – Ven : 7h30 – 17h00<br/>Sam : 8h00 – 13h00</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <p class="quick-links-title">Accès rapide</p>
+        <a class="quick-link" routerLink="/ask">
+          <div class="ql-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div>
+            <strong>Déposer une requête</strong>
+            <span>Formulaire de demande officielle</span>
+          </div>
+          <svg class="ql-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="quick-link" routerLink="/visit">
+          <div class="ql-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <strong>Planifier une visite</strong>
+            <span>Venez découvrir nos ateliers</span>
+          </div>
+          <svg class="ql-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
